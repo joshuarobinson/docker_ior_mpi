@@ -4,10 +4,11 @@ set -e
 
 # Docker repository to use. Default to docker hub.
 REPONAME=joshuarobinson
+TAG=ior
 
 # Build docker image.
-docker build -t ior .
+docker build -t $TAG .
 
 # Push to docker repository.
-docker tag ior $REPONAME/ior
-docker push $REPONAME/ior
+docker tag $TAG $REPONAME/$TAG
+docker push $REPONAME/$TAG
