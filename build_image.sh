@@ -4,7 +4,7 @@ set -e
 
 # Docker repository to use. Default to docker hub.
 REPONAME=joshuarobinson
-TAG=ior
+TAG=io500
 
 # Build docker image.
 docker build -t $TAG .
